@@ -9,25 +9,25 @@ const Index = () => {
   const newBooks = [
     {
       id: 1,
-      title: 'Тихие воды',
-      author: 'Анна Волкова',
-      genre: 'Современная проза',
+      title: 'English Grammar in Use',
+      author: 'Raymond Murphy',
+      genre: 'Английский язык',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/70227dc9-aef5-4f6a-b482-8033f8413f3d.jpg',
       status: 'Новинка'
     },
     {
       id: 2,
-      title: 'Архитектура молчания',
-      author: 'Дмитрий Серов',
-      genre: 'Философия',
+      title: 'Deutsch für Anfänger',
+      author: 'Maria Schmidt',
+      genre: 'Немецкий язык',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/4c6d0b74-44b6-4737-9fde-c2387eb961ba.jpg',
       status: 'Новинка'
     },
     {
       id: 3,
-      title: 'Граница света',
-      author: 'Елена Морская',
-      genre: 'Поэзия',
+      title: 'Le Français Moderne',
+      author: 'Jean Dubois',
+      genre: 'Французский язык',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/034f7974-2ac7-45c1-a1d4-d2d579147e7b.jpg',
       status: 'Скоро'
     }
@@ -37,14 +37,14 @@ const Index = () => {
     {
       id: 1,
       date: '15 декабря 2025',
-      title: 'Презентация сборника "Зимние эскизы"',
-      description: 'Встреча с авторами и обсуждение книги'
+      title: 'Вебинар: Современные методы изучения английского',
+      description: 'Бесплатный онлайн-семинар для преподавателей и студентов'
     },
     {
       id: 2,
       date: '20 декабря 2025',
-      title: 'Новая серия "Современная классика"',
-      description: 'Анонс новой издательской серии'
+      title: 'Новая серия "Практическая грамматика"',
+      description: 'Анонс учебных пособий для уровней A1-C2'
     }
   ];
 
@@ -59,7 +59,7 @@ const Index = () => {
               Издательский дом DIA
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Мы создаём книги, которые остаются. Лаконичность формы, глубина содержания.
+              Качественные учебные материалы для изучения иностранных языков. Проверенные методики, современный подход.
             </p>
             <div className="flex gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">

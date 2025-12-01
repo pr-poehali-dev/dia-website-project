@@ -7,68 +7,68 @@ import { useState } from 'react';
 const Catalog = () => {
   const [selectedGenre, setSelectedGenre] = useState('Все');
 
-  const genres = ['Все', 'Современная проза', 'Философия', 'Поэзия', 'Детектив', 'Эссе'];
+  const genres = ['Все', 'Английский', 'Немецкий', 'Французский', 'Испанский', 'Итальянский'];
 
   const books = [
     {
       id: 1,
-      title: 'Тихие воды',
-      author: 'Анна Волкова',
-      genre: 'Современная проза',
+      title: 'English Grammar in Use',
+      author: 'Raymond Murphy',
+      genre: 'Английский',
       year: 2025,
-      price: '890 ₽',
+      price: '1 290 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/70227dc9-aef5-4f6a-b482-8033f8413f3d.jpg',
-      description: 'Роман о поиске себя в современном мире'
+      description: 'Классический учебник английской грамматики для уровня Intermediate'
     },
     {
       id: 2,
-      title: 'Архитектура молчания',
-      author: 'Дмитрий Серов',
-      genre: 'Философия',
+      title: 'Deutsch für Anfänger',
+      author: 'Maria Schmidt',
+      genre: 'Немецкий',
       year: 2025,
-      price: '950 ₽',
+      price: '1 150 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/4c6d0b74-44b6-4737-9fde-c2387eb961ba.jpg',
-      description: 'Философские размышления о природе тишины'
+      description: 'Полный курс немецкого языка для начинающих с аудиоматериалами'
     },
     {
       id: 3,
-      title: 'Граница света',
-      author: 'Елена Морская',
-      genre: 'Поэзия',
+      title: 'Le Français Moderne',
+      author: 'Jean Dubois',
+      genre: 'Французский',
       year: 2024,
-      price: '690 ₽',
+      price: '1 090 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/034f7974-2ac7-45c1-a1d4-d2d579147e7b.jpg',
-      description: 'Сборник стихотворений о границах восприятия'
+      description: 'Современный французский язык: грамматика и лексика уровня B1-B2'
     },
     {
       id: 4,
-      title: 'Между строк',
-      author: 'Михаил Северов',
-      genre: 'Эссе',
+      title: 'Español para Ti',
+      author: 'Carlos Martinez',
+      genre: 'Испанский',
       year: 2024,
-      price: '790 ₽',
+      price: '1 190 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/70227dc9-aef5-4f6a-b482-8033f8413f3d.jpg',
-      description: 'Эссе о литературе и культуре'
+      description: 'Испанский язык с нуля: интерактивный курс с упражнениями'
     },
     {
       id: 5,
-      title: 'Тени прошлого',
-      author: 'Ирина Белова',
-      genre: 'Детектив',
+      title: 'Advanced IELTS Practice',
+      author: 'Sarah Johnson',
+      genre: 'Английский',
       year: 2024,
-      price: '850 ₽',
+      price: '1 450 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/4c6d0b74-44b6-4737-9fde-c2387eb961ba.jpg',
-      description: 'Психологический детектив с неожиданной развязкой'
+      description: 'Подготовка к экзамену IELTS: полный сборник тестов и заданий'
     },
     {
       id: 6,
-      title: 'Осенние заметки',
-      author: 'Петр Лесной',
-      genre: 'Современная проза',
+      title: 'Italiano in Pratica',
+      author: 'Giuseppe Rossi',
+      genre: 'Итальянский',
       year: 2023,
-      price: '820 ₽',
+      price: '1 050 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/034f7974-2ac7-45c1-a1d4-d2d579147e7b.jpg',
-      description: 'История о возвращении к истокам'
+      description: 'Практический итальянский для повседневного общения'
     }
   ];
 
