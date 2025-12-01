@@ -15,6 +15,7 @@ const Catalog = () => {
       title: 'English Grammar in Use',
       author: 'Raymond Murphy',
       genre: 'Английский',
+      level: 'B1-B2',
       year: 2025,
       price: '1 290 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/70227dc9-aef5-4f6a-b482-8033f8413f3d.jpg',
@@ -25,6 +26,7 @@ const Catalog = () => {
       title: 'Deutsch für Anfänger',
       author: 'Maria Schmidt',
       genre: 'Немецкий',
+      level: 'A1-A2',
       year: 2025,
       price: '1 150 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/4c6d0b74-44b6-4737-9fde-c2387eb961ba.jpg',
@@ -35,6 +37,7 @@ const Catalog = () => {
       title: 'Le Français Moderne',
       author: 'Jean Dubois',
       genre: 'Французский',
+      level: 'B1-B2',
       year: 2024,
       price: '1 090 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/034f7974-2ac7-45c1-a1d4-d2d579147e7b.jpg',
@@ -45,6 +48,7 @@ const Catalog = () => {
       title: 'Español para Ti',
       author: 'Carlos Martinez',
       genre: 'Испанский',
+      level: 'A1-A2',
       year: 2024,
       price: '1 190 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/70227dc9-aef5-4f6a-b482-8033f8413f3d.jpg',
@@ -55,6 +59,7 @@ const Catalog = () => {
       title: 'Advanced IELTS Practice',
       author: 'Sarah Johnson',
       genre: 'Английский',
+      level: 'C1-C2',
       year: 2024,
       price: '1 450 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/4c6d0b74-44b6-4737-9fde-c2387eb961ba.jpg',
@@ -65,6 +70,7 @@ const Catalog = () => {
       title: 'Italiano in Pratica',
       author: 'Giuseppe Rossi',
       genre: 'Итальянский',
+      level: 'A2-B1',
       year: 2023,
       price: '1 050 ₽',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/034f7974-2ac7-45c1-a1d4-d2d579147e7b.jpg',
@@ -118,7 +124,10 @@ const Catalog = () => {
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-3">
-                    <Badge variant="secondary">{book.genre}</Badge>
+                    <div className="flex gap-2">
+                      <Badge variant="secondary">{book.genre}</Badge>
+                      <Badge variant="outline" className="bg-accent">{book.level}</Badge>
+                    </div>
                     <span className="text-sm text-muted-foreground">{book.year}</span>
                   </div>
                   <h3 className="text-2xl font-cormorant font-semibold mb-2 text-primary">

@@ -12,6 +12,7 @@ const Index = () => {
       title: 'English Grammar in Use',
       author: 'Raymond Murphy',
       genre: 'Английский язык',
+      level: 'B1-B2',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/70227dc9-aef5-4f6a-b482-8033f8413f3d.jpg',
       status: 'Новинка'
     },
@@ -20,6 +21,7 @@ const Index = () => {
       title: 'Deutsch für Anfänger',
       author: 'Maria Schmidt',
       genre: 'Немецкий язык',
+      level: 'A1-A2',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/4c6d0b74-44b6-4737-9fde-c2387eb961ba.jpg',
       status: 'Новинка'
     },
@@ -28,6 +30,7 @@ const Index = () => {
       title: 'Le Français Moderne',
       author: 'Jean Dubois',
       genre: 'Французский язык',
+      level: 'B1-B2',
       cover: 'https://cdn.poehali.dev/projects/3d194df5-859d-4e05-b4c2-238aba13488d/files/034f7974-2ac7-45c1-a1d4-d2d579147e7b.jpg',
       status: 'Скоро'
     }
@@ -100,9 +103,12 @@ const Index = () => {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <div className="mb-3">
+                  <div className="mb-3 flex gap-2">
                     <Badge variant={book.status === 'Новинка' ? 'default' : 'secondary'}>
                       {book.status}
+                    </Badge>
+                    <Badge variant="outline" className="bg-accent">
+                      {book.level}
                     </Badge>
                   </div>
                   <h3 className="text-2xl font-cormorant font-semibold mb-2 text-primary">
